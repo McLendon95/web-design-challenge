@@ -1,238 +1,171 @@
 
-/* ----Base styling.  Comments are suggestions, feel free to add more. if you don't use one of the ones 
-listed here, please remove it from css styles---- */
-html {
-  /* Positioning */
- 
+body {
+  background-image: url("https://img.freepik.com/free-vector/blue-cloudy-daylight-background-weather-design_33099-512.jpg?w=996&t=st=1665381975~exp=1665382575~hmac=d8c5a019c69199cc67b5464d7941434f502e106c8a123b940920b89f4c6bfeb1");
+  height: 750px;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+hr{
+  color: darkgrey;
+}
+.navbar {
+  max-height: 50px;
+  background-color: rgb(255,255,255);
+  font-size: 25px;
 
-  /* Box-model */
+}
+.navigation .navbar-brand {
+  color: rgb(52, 61, 165);
+  margin-left: 0px;
+  padding: inherit;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  font-family: cochin;
+}
+
+.active, .dropdown-menu .dropdown-item:active a:hover {
+  background-color: rgb(255,255,255);
+}
+.dropdown-item {
+  color: rgb(52, 61, 165);
+}
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: rgb(52, 61, 165);
+  color:white;
+}
+
+.nav-link:hover {
+  background-color:rgb(52, 61, 165);
+  color: white;
+ }
+
+.navbar-brand:hover {
+color: rgb(16, 16, 16);
+}
+
+a {
+  color: rgb(231, 231, 231);
+  font-size: 15px;
+}
+
+img{
+  width:100%;
+  height:100%;
+}
+
+.img-responsive{
+  border: 20px;
+  box-shadow: 10px 10px 5px rgb(22, 23, 23);
+}
+
+#a1{
+  margin: 10px;
+}
+
+.panel:hover {
+  border-color:rgb(7, 7, 7);
+  border-style: solid;
+  
+}
+.visualization {
+  width:50%;
+  height:50%;
+}
+
+.col-md-12 {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  padding: 10px 30px 10px;
+  color: #ffffff;
+  background-color: rgb(255, 255, 255);
+}
+
+.title {
+  color: rgb(137, 135, 135);
+  font-family: cochin;
+  font-weight: bolder;
+  padding-top: 10px;
+}
+
+p {
+color: rgb(5, 5, 5);
+font-family: 'segoe ui';
+font-size: 16px;
+}
+
+.box {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  padding: 10px 30px;
+  color: #ffffff;
+  background-color: rgb(255, 255, 255);
 
 }
 
-body {
-  /* Positioning */
- 
+.table {
+  font-size: 15px;
+  border-top-color: rgb(255, 255, 255);
+}
 
-  /* Typography */
-  
+footer {
+background-color: #000000;
+border-top-style: solid;
+border-top-width: 5px;
+border-top-color: rgb(37, 80, 87);
+color: rgb(171, 222, 226);
+min-height: 50px;
+font-family: Menlo, Helvetica, sans-serif;
+font-size: 10px;
+text-align: center;
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+padding-top: 15px;
+}
 
-  /* Visual */
-
+.table-responsive{
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 470px;
+  max-width: auto;
 }
 
 /* Media query for body */
 @media only screen and (max-width: 767px) {
-  /* Set background color to white on small screens */
- 
-}
-
-/* ----End base styling---- */
-
-/* ----NAV START---- */
-.navbar-custom {
-  background-color: #fff;
-}
-
-#logo {
-  /* Box-model */
- 
-  /* Positioning */
-
-
-  /* Typography */
-
-
-  /* Visual */
-  
-}
-
-/* Logo hover state */
-#logo:hover {
-  /* Visual */
-  opacity: 0.7;
-}
-
-.navbar-right-custom {
-  /* Box-model */
-
-
-  /* Typography */
-
-}
-
-/* Nav element hover state */
-.navbar-default .navbar-nav > li > a:hover {
-  color: #4aaaa5;
-}
-
-/* Media query for nav */
-@media only screen and (max-width: 767px) {
-  .navbar-header {
-    background-color: #4aaaa5;
-  }
-
-  #logo {
-    width: 100%;
-
-    /* Box-model */
-
-
-    /* Positioning */
-
-
-    /* Typography */
-
-
-    /* Visual */
+  .navbar-expand-lg {
+    background-color: #000000;
+    }
+    .navbar {
+      max-height: none;
+      padding: inherit;
+    }
+    .navbar div {
+      margin: inherit;
+      background-color: rgb(255,255,255);
+    }
+    .navbar-brand {
+      padding: 10px;
+    }
+    button{
+      margin-right: 30px;
+    }
+    button:focus {
+      outline: 1px dotted;
+      outline: auto 5px;
+    }
+    .row{
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+    .title{
+      font-size: 5;
+    }
+    .col-md-6{
+    padding-bottom: 10px;
+    }
     
   }
-}
-
-/* -----NAV END---- */
-
-/* ----DESCRIPTION START---- */
-.description-header {
-  /* Positioning */
- 
-
-  /* Typography */
-
-}
-
-.description-content {
-  /* Box-model */
-
-
-  /* Positioning */
-
-
-  /* Visual */
-  
-}
-
-.description-content > p {
-  /* Box-model */
- 
-
-  /* Typography */
-
-}
-
-.description-text {
-  padding-bottom: 20px;
-}
-
-#description-image {
-  /* Positioning */
-
-
-  /* Box-model */
-
-}
-
-/* Description content media query */
-@media only screen and (max-width: 767px) {
-  /* override default class styling for positioning/padding */
-
-  .description-content {
-    /* Box-model */
-    padding: 0;
-
-    /* Positioning */
-    margin-top: 0;
-  }
-}
-
-/* ----DESCRIPTION END---- */
-
-/* ----IMAGE NAV START---- */
-#imageNav-area {
-  width: 100%;
-
-  /* Box-model */
-  
-
-  /* Positioning */
-  
-
-  /* Visual */
- 
-}
-
-.imageNav-header {
-  /* Positioning */
-
-
-  /* Typography */
-
-
-.imageNav-photo {
-  width: 140px;
-
-  /* Box-model */
-
-}
-
-.imageNav-photo:hover {
-  /* Visuals */
-  opacity: 0.6;
-}
-
-.imageNav-photo.active {
-  /* Visuals */
-  border: 2px solid #4aaaa5;
-}
-
-#images {
-  /* Box-model */
-  padding-top: 15px;
-
-  /* Typography */
-  text-align: center;
-}
-
-/* ----IMAGE NAV END---- */
-
-/* ----COMPARISON START---- */
-.comparison-image:hover {
-  opacity: 0.6;
-}
-
-.comparison-header {
-  /* Positioning */
-
-
-  /* Typography */
-
-}
-
-/* ----COMPARISON END---- */
-
-/* ----FOOTER START---- */
-.footer {
-  /* Positioning */
-
-
-  /* Box-model */
-
-  /* Visual */
-  
-}
-
-.text-muted-footer {
-  /* Positioning */
-  
-
-  /* Typography */
-  
-}
-
-.two-toned-footer-color {
-  /* Box-model */
-
-
-  /* Visual */
-  
-}
-
-/* ----FOOTER END---- */

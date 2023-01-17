@@ -1,33 +1,97 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bootstrap Visualization Dashboard</title>
+    <title>Web Visualization</title>
+  
+    <!-- Bring in our bootstrap stylesheet -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <!-- Boostrap Stylesheet -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
-
-    <!-- Our own CSS stylesheet -->
-    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
-
+     <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
   <body>
     <!-- Start of navbar -->
-    <!-- Day 3 Activity 7 has an example of a navbar in Bootstrap -->
+    <div class="navigation">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="http://127.0.0.1:5500/index.html">LATITUDE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:5500/comparison.html">COMPARISON</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:5500/data.html">DATA</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PLOTS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="http://127.0.0.1:5500/visualization/temperature.html">Max Temperature</a></li>
+                  <li><a class="dropdown-item" href="http://127.0.0.1:5500/visualization/humidity.html">Humidity</a></li>
+                  <li><a class="dropdown-item" href="http://127.0.0.1:5500/visualization/cloudiness.html">Cloudiness</a></li>
+                  <li><a class="dropdown-item" href="http://127.0.0.1:5500/visualization/wind.html">Wind Speed</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
     <!-- End of navbar -->
 
     <!-- Start of container -->
     <div class="container">
       <section class="row">
         <div class="col-md-8">
-            <!-- Put your content here -->
+          <div class="box" style="padding-bottom: 20px;">
+            <h3 class="title">SUMMARY: LATITUDE VS. X</h3>
+            <hr>
+            <img src="assets/Images/Fig1.png" class="visualization rounded float-left" alt="Max Temperature Graph">
+            <p>This project was intended to analyze weather accross 500+ cities gloablly and study the affect their distance from the equator has on them.</p>
+              <br>
+            <p>I used Matplotlib in order to show temperature, humidity, cloudiness, and wind speed as they relate to latitude.</p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </p>
+          </div>        
         </div>
         <div class="col-md-4">
 
           <!-- Start of Visualizations imageNav Area -->
           <section id="imageNav-area">
-            <!-- Put your content here -->
+            <div class="col-md-12">
+              <h3 class="title">Visualizations</h3>
+              <hr>
+              <div class="row">
+                  <div class="col-3 col-md-6">
+                      <a href="http://127.0.0.1:5500/visualization/temperature.html"><img src="assets/Images/Fig1.png" width="100%"  alt="temperature">
+                      </a> 
+                  </div>
+                  <div class="col-3 col-md-6">
+                      <a href="http://127.0.0.1:5500/visualization/humidity.html"><img src="assets/Images/Fig2.png" width="100%" alt="humidity"></a>
+                  </div>
+             
+                  <div class="col-3 col-md-6">
+                      <a href="http://127.0.0.1:5500/visualization/cloudiness.html"><img src="assets/Images/Fig3.png" width="100%"  alt="cloudiness"></a>
+                  </div>
+
+                  <div class="col-3 col-md-6">
+                      <a href="visualization/wind.html"><img src="assets/Images/Fig4.png"width="100%"  alt="wind speed"></a>
+                  </div>
+              </div>
+          </div>
           </section>
           <!-- End of the Visualizations imageNav Area -->
 
@@ -37,14 +101,17 @@
     <!-- End of container -->
 
     <!-- Start of footer -->
-<!-- Look for footer in bootstrap -->
+    <footer class="footer">
+       Created by Michael McLendon </footer>
     <!-- End of footer -->
 
     <!-- jQuery CDN -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    
     <!-- Bootstrap CDN -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
   </body>
 
 </html>
